@@ -1,3 +1,6 @@
+## Deployed Here
+https://emi-calculator-coral.vercel.app/
+
 ## To Start the Server
 
 First Fork and Clone this repo in your local system. 
