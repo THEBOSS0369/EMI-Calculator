@@ -21,6 +21,7 @@ const LoanForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
     const [interestRate, setInterestRate] = useState<number | ''>('');
     const [tenure, setTenure] = useState<number | ''>('');
     const [prepayment, setPrepayment] = useState<number | ''>('');
+    const [date, setDate] = useState<Date | undefined>(new Date())
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -79,7 +80,6 @@ const LoanForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
                     <Button type="submit" variant={'outline'} className="bg-black mx-auto flex ">Submit</Button>
                 </CardContent>
             </Card>
-
         </form>
     );
 };

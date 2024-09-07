@@ -43,6 +43,9 @@ const EMIResult = ({ results }: { results: any }) => {
                             <TableCell>{totalAmount.toFixed(2)}</TableCell>
                         </TableRow>
                         <TableRow>
+                            <TableCell></TableCell>
+                        </TableRow>
+                        <TableRow>
                             <TableHead className="w-[150px]">Month</TableHead>
                             <TableHead>EMI</TableHead>
                             <TableHead>Interst Paid</TableHead>
