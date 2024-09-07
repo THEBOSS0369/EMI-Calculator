@@ -1,7 +1,7 @@
-#EMI Calculator
+# EMI Calculator
 Calculate your Emi using this!!
 
-##Images
+## Images
 ![working ](https://github.com/user-attachments/assets/6f0e7e64-6ad2-4152-8103-538008f89b9a)
 ![working 2](https://github.com/user-attachments/assets/b8c7d656-2835-45fe-a60b-6a2285943936)
 
