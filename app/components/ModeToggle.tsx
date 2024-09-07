@@ -23,6 +23,7 @@ export function ModeToggle() {
                     <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                     <span className="sr-only">Toggle theme</span>
                     <h2 className="text-gray-500">T</h2>
+
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
