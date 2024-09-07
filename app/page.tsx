@@ -3,6 +3,9 @@ import { useState } from 'react';
 import LoanForm from './components/LoanForm';
 import EMIResult from './components/EMIResult';
 import { calculateEMI } from './utils/emiCalculator';
+import { ModeToggle } from './components/ModeToggle';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 type Payment = {
   month: number;
@@ -36,6 +39,11 @@ const Home = () => {
             <h1 className="mr-auto flex items-center gap-2 text-lg font-semibold" >
               <span className='text-gray-900 font-bold text-xl'>EMI Calculator</span>
             </h1>
+            <ModeToggle />
+            <Avatar className='mx-2'>
+              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </nav>
