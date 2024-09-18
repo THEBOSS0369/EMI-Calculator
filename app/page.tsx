@@ -37,7 +37,7 @@ const Home = () => {
         <div className="container px-4 md:px-6">
           <div className="flex h-14 items-center p-4">
             <h1 className="mr-auto flex items-center gap-2 text-lg font-semibold" >
-              <span className='text-gray-900 font-bold text-xl'>EMI Calculator</span>
+              <span className=' font-bold text-xl'>EMI Calculator</span>
             </h1>
             <ModeToggle />
             <Avatar className='mx-2'>
