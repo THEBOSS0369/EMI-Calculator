@@ -36,17 +36,17 @@ const LoanForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
     return (
         <form onSubmit={handleSubmit} className="p-4 space-y-4">
             <Card>
-                <h1 className='text-4xl flex pt-4 font-semibold text-gray-800 justify-center '>Calculate Your EMI EASILY </h1>
+                <h1 className='text-4xl flex pt-4 font-semibold text-gray-400 justify-center '>Calculate Your EMI EASILY </h1>
                 <CardContent className='p-6'>                    <div className='p-2'>
-                        <h2 className=' p-1'>Loan Amount:</h2>
-                        <Input
-                            type="number"
-                            value={loanAmount}
-                            placeholder="Enter Loan Amount"
-                            onChange={(e) => setLoanAmount(+e.target.value)}
-                            required
-                        />
-                    </div>
+                    <h2 className=' p-1'>Loan Amount:</h2>
+                    <Input
+                        type="number"
+                        value={loanAmount}
+                        placeholder="Enter Loan Amount"
+                        onChange={(e) => setLoanAmount(+e.target.value)}
+                        required
+                    />
+                </div>
                     <div className='p-2'>
                         <h2>Interest Rate (%):</h2>
                         <Input

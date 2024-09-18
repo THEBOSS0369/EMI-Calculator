@@ -102,5 +102,5 @@ h1 {
 }
 
 h2 {
-  @apply p-1 text-gray-600 font-bold;
+  @apply p-1 text-gray-400 font-bold;
 }
