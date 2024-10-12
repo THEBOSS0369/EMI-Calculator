@@ -11,6 +11,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Button } from '@/components/ui/button';
 
+import { useTheme } from 'next-themes';
 
 const formSchema = z.object({
     username: z.string().min(2).max(50),
@@ -23,6 +24,8 @@ const LoanForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
     const [prepayment, setPrepayment] = useState<number | ''>('');
     const [date, setDate] = useState<Date | undefined>(new Date())
 
+    const { theme } = useTheme();
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (loanAmount && interestRate && tenure) {
@@ -32,12 +35,12 @@ const LoanForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
         }
     };
 
-
     return (
         <form onSubmit={handleSubmit} className="p-4 space-y-4">
             <Card>
-                <h1 className='text-4xl flex pt-4 font-semibold text-gray-800 justify-center '>Calculate Your EMI EASILY </h1>
-                <CardContent className='p-6'>                    <div className='p-2'>
+                <h1 className={`text-4xl flex pt-4 font-semibold  ${theme === 'dark' ? 'text-gray-300' : 'text-gray-800'} justify-center `}>Calculate Your EMI EASILY </h1>
+                <CardContent className='p-6'>
+                    <div className='p-2'>
                         <h2 className=' p-1'>Loan Amount:</h2>
                         <Input
                             type="number"
