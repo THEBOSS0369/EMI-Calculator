@@ -2,6 +2,10 @@
 
 export default function Test() {
     return (
-        < h1 > Hello World</h1 >
+        <div>
+            < h1 > Hello World</h1 >
+            <h2>New World</h2>
+        </div>
+
     )
 }
